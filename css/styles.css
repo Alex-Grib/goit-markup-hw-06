@@ -894,7 +894,6 @@ button:focus {
   margin-left: 119px;
 
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -912,4 +911,5 @@ button:focus {
 .button-modal-push:focus {
   background-color: var(--primary-white-color);
   color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

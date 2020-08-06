@@ -543,6 +543,9 @@ address {
   font-size: 16px;
   line-height: 1.25;
 }
+.footer-input-email:focus {
+  outline: none;
+}
 
 .btn-footer {
   position: relative;

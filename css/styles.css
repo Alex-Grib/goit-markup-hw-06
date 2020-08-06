@@ -874,16 +874,17 @@ button:focus {
   transition: transform 250ms var(--timing-function);
 }
 
-.backdrop-input:focus + .backdrop-lable,
+/* .backdrop-input:focus + .backdrop-lable,
 .backdrop-input:not(:placeholder-shown) + .backdrop-lable {
   transform: translate(-25px, -10px);
   font-size: 12px;
   line-height: 1.17;
   color: var(--accent-color);
-}
+} */
 
 .backdrop-input:hover + .backdrop-lable,
-.backdrop-input:focus + .backdrop-lable {
+.backdrop-input:focus + .backdrop-lable,
+.backdrop-input:not(:placeholder-shown) + .backdrop-lable {
   transform: translate(-25px, -20px);
   font-size: 12px;
   line-height: 1.17;

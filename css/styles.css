@@ -879,7 +879,8 @@ button:focus {
   color: var(--accent-color);
 }
 
-.backdrop-input:hover + .backdrop-lable {
+.backdrop-input:hover + .backdrop-lable,
+.backdrop-input:focus + .backdrop-lable {
   transform: translate(-25px, -20px);
   font-size: 12px;
   line-height: 1.17;
@@ -894,7 +895,8 @@ button:focus {
   border-color: var(--accent-color);
 }
 
-.backdrop-input:hover ~ .input-svg {
+.backdrop-input:hover ~ .input-svg,
+.backdrop-input:focus ~ .input-svg {
   fill: var(--accent-color);
 }
 

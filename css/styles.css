@@ -859,7 +859,7 @@ button:focus {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  transform: 1250ms var(--timing-function);
+  transform: 250ms var(--timing-function);
 }
 
 .backdrop-lable {
@@ -889,6 +889,8 @@ button:focus {
 
 .backdrop-input:focus,
 .textarea-comment:focus,
+.backdrop-input:hover,
+.textarea-comment:hover,
 .backdrop-input:not(:placeholder-shown),
 .textarea-comment:not(:placeholder-shown) {
   outline: none;

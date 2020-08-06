@@ -898,6 +898,10 @@ button:focus {
   fill: var(--accent-color);
 }
 
+.input-svg:not(:placeholder-shown) {
+  fill: var(--accent-color);
+}
+
 .input-svg {
   position: absolute;
   width: 18px;

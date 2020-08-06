@@ -78,12 +78,24 @@
                   type="text"
                   name="name"
                   id="name"
+                  placeholder=" "
                 />
                 <label class="backdrop-lable" for="name">Имя</label>
+                <svg class="input-svg"><use href="./images/modal-svg-sprite.svg#icon-name-svg"></use></svg>
+
               </div>
               <div class="form-field-backdrop">
-                <input class="backdrop-input" type="tel" name="tel" id="tel" />
+                <input
+                  class="backdrop-input"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder=" "
+                />
                 <label class="backdrop-lable" for="tel">Телефон</label>
+                <svg class="input-svg">
+                  <use href="./images/modal-svg-sprite.svg#icon-phone-svg"></use>
+                </svg>
               </div>
               <div class="form-field-backdrop">
                 <input
@@ -91,30 +103,37 @@
                   type="email"
                   name="email"
                   id="email"
+                  placeholder=" "
                 />
                 <label class="backdrop-lable" for="email">Почта</label>
+                <svg class="input-svg">
+                  <use href="./images/modal-svg-sprite.svg#icon-email-svg"></use>
+                </svg>
               </div>
               <div class="textarea-box">
                 <textarea
                   class="textarea-comment"
                   name="comment"
                   id="comment"
-                  cols="30"
-                  rows="10"
+                  placeholder=" "
                 ></textarea>
                 <label for="comment" class="textarea-text">Комментарий</label>
               </div>
               <div class="policy">
-                <label for="policy">
+                <label class="policy-label">
                   <input
-                    class="policy-text"
                     type="checkbox"
+                    value="accept-policy"
                     name="policy"
-                    id="policy"
+                    class="policy-checkbox"
                   />
-                  <span class="check-box"></span> Соглашаюсь с рассылкой и
-                  принимаю
-                  <a class="policy-contract" href="#">Условия договора</a>
+                  <span class="checkbox-icon"></span>
+                  <span class="policy-text"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a class="policy-contract" href="#"
+                      >Условия договора</a
+                    ></span
+                  >
                 </label>
               </div>
               <button type="submit" class="button-modal-push">Отправить</button>
@@ -495,7 +514,12 @@
         </div>
         <div class="subscription">
           <b class="sign-up">подпишитесь на расслыку</b>
+          <form  action="#">
+           <div class="footer-form">
+             <input class="footer-input-email" type="email" name="email" placeholder="E-mail" />
+          </form>
           <button class="btn-footer">Подписаться</button>
+        </div> 
         </div>
       </div>
     </footer>

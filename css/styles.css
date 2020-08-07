@@ -807,8 +807,8 @@ button:focus {
 }
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  max-width: 528px;
+
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -859,6 +859,8 @@ button:focus {
   width: 100%;
   padding-left: 42px;
   height: 40px;
+  font-size: 14px;
+  line-height: 1.14;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -867,9 +869,11 @@ button:focus {
 
 .backdrop-lable {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 42px;
-  transform: translateY(60%);
+  transform: translateY(-50%);
+  font-size: 14px;
+  line-height: 1.14;
   color: var(--primary-text-color);
   transition: transform 250ms var(--timing-function);
 }
@@ -877,7 +881,7 @@ button:focus {
 .backdrop-input:hover + .backdrop-lable,
 .backdrop-input:focus + .backdrop-lable,
 .backdrop-input:not(:placeholder-shown) + .backdrop-lable {
-  transform: translate(-25px, -20px);
+  transform: translate(-85%, -270%);
   font-size: 12px;
   line-height: 1.17;
   color: var(--accent-color);
@@ -925,10 +929,13 @@ button:focus {
   width: 100%;
   height: 120px;
   padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 16px;
+  padding-right: 16px;
   background: var(--primary-white-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
-
+  font-size: 14px;
+  line-height: 1.14;
   border-radius: 4px;
 }
 
